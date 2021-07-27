@@ -1,5 +1,5 @@
 
-const {nombreUsuario} = require('../index');
+const {nombreUsuario, saludoUsuario} = require('../index');
 
 describe('Pruebas de ejemplo en index.js', () => {
 
@@ -11,6 +11,11 @@ describe('Pruebas de ejemplo en index.js', () => {
 
         expect(nombre2).toBe(nombre);
     
+    })
+
+    test('Debe retornar Hola "Usuario"',()=>{
+        const usuario = 'Antonio';
+        expect('Hola Jonathan').toBe(saludoUsuario(usuario));
     })
     
 })
